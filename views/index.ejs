@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+
+  <link rel="shortcut icon" href="/public/images/vscode.png" type="image/x-icon">
+  
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <div id="nav">
+    <div id="nav-left">
+
+      <img src="/public/images/img1.png" alt="vsLogo">
+
+      <a href="#">File</a>
+      <a href="#">Edit</a>
+      <a href="#">Selection</a>
+      <a href="#">Views</a>
+      <a href="#">Go</a>
+      <a href="#">Run</a>
+      <a href="#">Terminal</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div id="nav-center">
+      Visual Studio Code
+    </div>
+
+    <div id="nav-right1">
+      <i class="ri-side-bar-fill"></i>
+      <i class="ri-layout-row-fill"></i>
+      <i class="ri-layout-right-line"></i>
+      <i class="ri-layout-2-line"></i>
+
+      <i class="ri-subtract-fill"></i>
+      <i class="ri-file-copy-line"></i>
+      <i class="ri-close-fill"></i>
+    </div>
+  </div>
+  
+  <div id="main">
+    <h6>EXPLORER</h6>
+
+    <div class="container">
+      <div id="vertical-left">
+        <i class="ri-folder-2-line"></i>
+        <i class="ri-search-line"></i>
+        <i class="ri-git-branch-line"></i>
+        <i class="ri-bug-line"></i>
+        <i class="ri-function-line"></i>
+      </div>
+      <!-- left part -->
+      <div class="left">
+        
+        <!-- left top part -->
+        <div class="left-top">
+          <!-- vs code heading -->
+          <h3>vs code clone</h3>
+          
+          <!-- icons div -->
+          <div class="icons">
+            <i onclick="fileopen()" class="ri-file-add-line"></i>
+            <i onclick="folderopen()" class="ri-folder-add-line"></i>
+            <i class="ri-refresh-line"></i>
+          </div>
+        </div>
+
+        <div class="inputs">
+          <input type="text" placeholder="Files" name="file" class="file">
+          <input type="text" placeholder="Folder" name="file" class="folder">
+        </div>
+
+        <div class="files">
+          <!-- <a href="">index.js</a>
+          <a href="">index.js</a>
+          <a href="">index.js</a>
+          <a href="">index.js</a>
+          <a href="">index.js</a>
+          <a href="">index.js</a>
+           -->
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/script.js"></script>
+  </body>
+  
+</html>
