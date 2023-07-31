@@ -145,7 +145,8 @@ h6 {
   background-color: #202020dd;
   color: white;
 }
-.files{
+
+.files {
   display: flex;
   flex-direction: column;
 }

@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    <%= title %>
+
   </title>
 
   <link rel="shortcut icon" href="/public/images/vscode.png" type="image/x-icon">
-  
+
   <link rel='stylesheet' href='/stylesheets/style.css' />
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-  
+
 </head>
 
 <body>
@@ -50,7 +50,7 @@
       <i class="ri-close-fill"></i>
     </div>
   </div>
-  
+
   <div id="main">
     <h6>EXPLORER</h6>
 
@@ -64,12 +64,12 @@
       </div>
       <!-- left part -->
       <div class="left">
-        
+
         <!-- left top part -->
         <div class="left-top">
           <!-- vs code heading -->
           <h3>vs code clone</h3>
-          
+
           <!-- icons div -->
           <div class="icons">
             <i onclick="fileopen()" class="ri-file-add-line"></i>
@@ -79,22 +79,25 @@
         </div>
 
         <div class="inputs">
-          <input type="text" placeholder="Files" name="file" class="file">
-          <input type="text" placeholder="Folder" name="file" class="folder">
-        </div>
+          <form action="createFile" method="post">
+            <input type="text" placeholder="Files" name="file" class="file">
 
-        <div class="files">
-          <!-- <a href="">index.js</a>
-          <a href="">index.js</a>
-          <a href="">index.js</a>
-          <a href="">index.js</a>
-          <a href="">index.js</a>
-          <a href="">index.js</a>
-           -->
+          </form>
+
+          <form action="createFolder" method="post">
+            <input type="text" placeholder="Folder" name="file" class="folder">
+
+          </form>
         </div>
+        <!-- <div class="files">
+          <a href="">index.js</a>
+          <a href="">index.js</a>
+          <a href="">index.js</a>
+        </div> -->
       </div>
     </div>
     <script src="/javascripts/script.js"></script>
-  </body>
-  
+</body>
+
 </html>
+
