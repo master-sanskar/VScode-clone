@@ -18,9 +18,10 @@ window.addEventListener('keydown', (e) => {
     if (e.keyCode === 27) {
         document.querySelectorAll('input').forEach((e) => {
             e.style.display = 'none'
-        })
-    }
-})
+        });
+    };
+});
+
 // ------------------------------------------------------------------------------------------------
 
 document.querySelector("#creater").addEventListener("mouseenter", function () {
